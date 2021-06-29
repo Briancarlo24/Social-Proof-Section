@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    text-align: center;
+    padding: 5% 12%;
+}
+
+.guide {
+    border: 1px solid magenta;
+}
+
+#main {
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    padding: 5%;
+    position: relative;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'left-container ratings'
+    'card-container';
+}
+
+#main .bg-top {
+    position:absolute;
+    left: 0;
+    transform: translateX(-15%);
+}
+
+#main .bg-bottom {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.left-container {
+    text-align: left;
+    padding: 2rem 7rem 2rem 2rem;
+}
+
+.left-container h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    line-height: 1em;
+    margin-bottom: 1rem;
+}
+
+.left-container p {
+    color:hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+.ratings h2 {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.4rem;
+    color: hsl(300, 43%, 22%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 1.5em 3em;
+    text-align: left;
+    width: 80%;
+}
+
+.ratings h2:first-child {
+    align-self: flex-start;
+}
+
+.ratings h2:last-child {
+    align-self: flex-end;
+}
+
+.ratings img {
+    margin-right: 5px; 
+}
+
+.ratings img:last-child {
+    margin-right: 1rem; 
+}
+
+.card-container {
+    grid-column: span 2 / auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 15px 2rem;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 35px;
+    text-align: left;
+    font-size: .8rem;
+}
+
+.card .profile-header {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    align-items: center;
+    justify-items: self-start;
+    margin-bottom: 25px;
+}
+
+.card img {
+    border-radius: 50%;
+    grid-row: span 2 / auto;
+    width: 50px;
+}
+
+.card h3 {
+    color: hsl(0, 0%, 100%) ;
+}
+
+.card span {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.card p {
+    color: white;
+   
+    line-height: 1.4rem;
+}
+
+.card-left {
+    align-self: flex-start;
+}
+
+.card-middle {
+    align-self: center;
+}
+
+.card-right {
+    align-self: flex-end;
+}
