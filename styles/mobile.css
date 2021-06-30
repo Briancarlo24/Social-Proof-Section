@@ -1,0 +1,73 @@
+@media screen and (max-width: 375px) {
+    body {
+        padding: 0;
+    }
+    
+    #main {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-areas: 
+        'topbar'
+        'ratings'
+        'card';
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+    }
+    
+    .left-container {
+        text-align: center;
+        padding: 2rem 1.5rem 0;
+        min-width: 0;
+    }
+
+    .left-container h1 {
+        margin-right: 0;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .left-container p {
+        font-size: .85rem;
+        width: 100%;
+    }
+
+    .ratings {
+        padding: 1rem 0;
+        min-width: 0;
+    }
+
+    .ratings h2 {
+        text-align: center;
+        width: 80vw;
+    }
+
+    .ratings img {
+        margin: 0 5px 5px;
+    }
+
+    .ratings span {
+        display: block;
+        margin: 0;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        row-gap: 1rem;
+        column-gap: 0;
+        padding: 2rem 1.5rem;
+        margin-right: 1rem;
+    }
+    
+    .card {
+       align-self: center;
+    }
+
+    
+
+
+}
