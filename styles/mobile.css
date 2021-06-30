@@ -4,7 +4,7 @@
     }
     
     #main {
-        padding: 2rem 0;
+        padding: 3rem 0;
         display: grid;
         grid-template-areas: 
         'topbar'
@@ -14,15 +14,24 @@
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
+    #main .bg-bottom {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
     
     .left-container {
         text-align: center;
         padding: 2rem 1.5rem 0;
+        min-width: 0;
+        width: 100vw;
     }
 
     .left-container h1 {
         margin-right: 0;
-        font-size: 2rem;
+        font-size: 2.2rem;
+        font-weight: 700;
         margin-bottom: 2rem;
         text-align: center;
     }
@@ -33,16 +42,18 @@
     }
 
     .ratings {
-        padding: 1rem 0 ;
+        padding: 1rem 1.5rem ;
+        min-width: 0;
+        width: 100vw;
     }
 
     .ratings h2 {
         text-align: center;
-        width: 80vw;
+        width: 100%;
     }
 
     .ratings img {
-        margin: 0 5px 5px;
+        margin: 0 5px 0 0;
     }
 
     .ratings span {
@@ -56,12 +67,13 @@
         grid-auto-rows: 1fr;
         row-gap: 1rem;
         column-gap: 0;
-        padding: 2rem 1.5rem;
+        padding: .5rem 1.5rem;
         margin-right: 1rem;
     }
     
     .card {
        align-self: center;
+       padding: 2rem;
     }
 
     

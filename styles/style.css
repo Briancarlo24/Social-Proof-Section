@@ -1,3 +1,7 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">);
+
 * {
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
@@ -120,8 +124,8 @@ body {
 
 .card {
     background-color: hsl(300, 43%, 22%);
-    border-radius: 10px;
-    padding: 2rem;
+    border-radius: 7px;
+    padding: 2.5rem 2rem;
     text-align: left;
     font-size: .8rem;
 }
